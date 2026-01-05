@@ -35,13 +35,6 @@
     },
     "openai": {
       "whitelist": ["gpt-5.2-codex"],
-      "options": {
-        "reasoningEffort": "medium",
-        "reasoningSummary": "auto",
-        "textVerbosity": "medium",
-        "include": ["reasoning.encrypted_content"],
-        "store": false,
-      },
       "models": {
         "gpt-5.2-codex": {
           "name": "GPT 5.2 Codex",
@@ -53,18 +46,27 @@
             "input": ["text", "image"],
             "output": ["text"],
           },
+          "options": {
+            "reasoningEffort": "medium",
+            "reasoningSummary": "auto",
+            "textVerbosity": "medium",
+            "include": ["reasoning.encrypted_content"],
+            "store": false,
+          },
           "variants": {
-            "low": {
-              "reasoningEffort": "low",
+            "xhigh": {
+              "reasoningEffort": "xhigh",
               "reasoningSummary": "auto",
               "textVerbosity": "medium",
               "include": ["reasoning.encrypted_content"],
               "store": false,
             },
-            "xhigh": {
-              "reasoningEffort": "xhigh",
-              "reasoningSummary": "detailed",
+            "high": {
+              "reasoningEffort": "high",
+              "reasoningSummary": "auto",
               "textVerbosity": "medium",
+              "include": ["reasoning.encrypted_content"],
+              "store": false,
             },
           },
         },
