@@ -1,7 +1,7 @@
 ---
 description: Oracle is a strategic technical advisor with deep reasoning capabilities, operating as an EXPENSIVE read-only consultant that cannot modify code, spawn subagents, or execute tasks. Invoke Oracle BEFORE implementation when facing complex architecture decisions affecting 3+ files, multi-system tradeoffs, unfamiliar design patterns, security-sensitive changes, or performance optimization strategies. Also invoke Oracle AFTER completing significant implementation work for self-review, or after 2-3 consecutive failed fix attempts when stuck in a debugging loop. Do NOT invoke Oracle for simple file operations, first attempts at any fix, trivial decisions like variable naming or formatting, questions answerable from code you have already read, or patterns you can infer from the existing codebase. Oracle delivers structured recommendations with effort estimates (Quick/Short/Medium/Large) and actionable implementation plans, making it ideal for getting strategic guidance before committing to complex changes or diagnosing persistent failures.
 mode: subagent
-model: gpt-5.2-codex
+model: openai/gpt-5.2-codex
 temperature: 0.1
 tools:
   write: false

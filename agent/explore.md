@@ -1,7 +1,7 @@
 ---
 description: Fast codebase search specialist that answers questions like "Where is X?", "Which file has Y?", or "Find the code that does Z". Use this agent when multiple search angles are needed, when exploring unfamiliar module structures, or when discovering cross-layer patterns across 2+ modules; fire multiple explore agents in parallel for broad searches and specify thoroughness level as "quick", "medium", or "very thorough". Do NOT use this agent when you already know exactly what to search, when a single keyword or pattern suffices for grep/glob, or when the file location is already known — in these cases, use Read, grep, or glob tools directly instead. This agent performs read-only operations.
 mode: subagent
-model: x-ai/grok-4.1-fast
+model: openrouter/x-ai/grok-4.1-fast
 temperature: 0.1
 tools:
   write: false
