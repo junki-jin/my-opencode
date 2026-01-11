@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "small_model": "opencode/grok-code",
   "plugin": [
     "opencode-gemini-auth@latest", 
     "opencode-pty",
@@ -21,48 +22,12 @@
       "whitelist": [
         "gpt-5.2-codex",
       ],
-      "models": {
-        "gpt-5.2-codex": {
-          "name": "GPT 5.2 Codex",
-          "limit": {
-            "context": 272000,
-            "output": 128000,
-          },
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"],
-          },
-          "options": {
-            "reasoningEffort": "medium",
-            "reasoningSummary": "auto",
-            "textVerbosity": "medium",
-            "include": ["reasoning.encrypted_content"],
-            "store": false,
-          },
-          "variants": {
-            "xhigh": {
-              "reasoningEffort": "xhigh",
-              "reasoningSummary": "auto",
-              "textVerbosity": "medium",
-              "include": ["reasoning.encrypted_content"],
-              "store": false,
-            },
-            "high": {
-              "reasoningEffort": "high",
-              "reasoningSummary": "auto",
-              "textVerbosity": "medium",
-              "include": ["reasoning.encrypted_content"],
-              "store": false,
-            },
-          },
-        },
-      },
     },
     "opencode": {
       "whitelist": [
-        "minimax-m2.1-free",
         "glm-4.7-free",
         "grok-code",
+        "minimax-m2.1-free",
       ],
     },
     "openrouter": {
@@ -71,46 +36,6 @@
         "anthropic/claude-sonnet-4.5",
         "x-ai/grok-4.1-fast",
       ],
-      "models": {
-        "anthropic/claude-opus-4.5": {
-          "options": {
-            "reasoning": {
-              "effort": null,
-              "max_tokens": 16000,
-            },
-          },
-          "variants": {
-            "max": {
-              "reasoning": {
-                "effort": null,
-                "max_tokens": 31999,
-              },
-            },
-            "high": { "disabled": true },
-            "medium": { "disabled": true },
-            "low": { "disabled": true },
-          },
-        },
-        "anthropic/claude-sonnet-4.5": {
-          "options": {
-            "reasoning": {
-              "effort": null,
-              "max_tokens": 16000,
-            },
-          },
-          "variants": {
-            "max": {
-              "reasoning": {
-                "effort": null,
-                "max_tokens": 31999,
-              },
-            },
-            "high": { "disabled": true },
-            "medium": { "disabled": true },
-            "low": { "disabled": true },
-          },
-        },
-      },
     },
   },
   "mcp": {
