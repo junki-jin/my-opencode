@@ -33,19 +33,7 @@
     "openrouter": {
       "whitelist": [
         "anthropic/claude-opus-4.5",
-        "anthropic/claude-sonnet-4.5",
-        "x-ai/grok-4.1-fast",
       ],
-    },
-  },
-  "mcp": {
-    "context7": {
-      "type": "remote",
-      "url": "https://mcp.context7.com/mcp",
-    },
-    "gh-grep": {
-      "type": "remote",
-      "url": "https://mcp.grep.app",
     },
   },
 }
