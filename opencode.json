@@ -9,7 +9,6 @@
     "google",
     "openai",
     "opencode",
-    "openrouter",
   ],
   "provider": {
     "google": {
@@ -28,11 +27,6 @@
         "glm-4.7-free",
         "grok-code",
         "minimax-m2.1-free",
-      ],
-    },
-    "openrouter": {
-      "whitelist": [
-        "anthropic/claude-opus-4.5",
       ],
     },
   },
