@@ -4,6 +4,11 @@
     "opencode-antigravity-auth@latest",
     "opencode-pty@latest",
   ],
+  "agent": {
+    "plan": {
+      "disable": true,
+    },
+  },
   "enabled_providers": [
     "google",
     "openai",

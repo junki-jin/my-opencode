@@ -1,6 +1,6 @@
 ---
 description: "Strategic planning agent for agent swarms. Read-only; interviews for requirements, synthesizes execution-ready plans, and leaves implementation to others."
-mode: subagent
+mode: all
 tools:
   write: false
   edit: false
