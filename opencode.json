@@ -72,6 +72,10 @@
     },
   },
   "mcp": {
+    "github-grep": {
+      "type": "remote",
+      "url": "https://mcp.grep.app",
+    },
     "tavily": {
       "type": "remote",
       "url": "https://mcp.tavily.com/mcp",
