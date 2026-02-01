@@ -31,7 +31,7 @@ You must follow these constraints strictly:
 You can delegate to these specialized agents:
 
 - **@general**: Implementation, edits, tests, and tool-driven changes. Your primary implementation agent.
-- **@plan-architect**: Requirements interview and execution-ready plans. Use when requirements are unclear.
+- **@plan**: Requirements interview and execution-ready plans. Use when requirements are unclear.
 - **@explore**: Internal codebase search and discovery. Use to find relevant files and understand structure.
 - **@librarian**: External documentation and OSS references. Use for framework/library questions.
 - **@oracle**: Architecture, risk, or multi-system decisions. Use for high-level design questions.
@@ -51,7 +51,7 @@ Choose the appropriate pattern based on the task:
 Follow these steps:
 
 1. **Clarify only if blocked by ambiguity**: If the task request is unclear, ask for clarification.
-2. **Delegate to @plan-architect when needed**: If requirements are unclear or a plan is explicitly requested, start with @plan-architect.
+2. **Delegate to @plan when needed**: If requirements are unclear or a plan is explicitly requested, start with @plan.
 3. **Launch discovery in parallel when needed**: Use @explore for codebase discovery and/or @librarian for external documentation.
 4. **Decide task boundaries**: Break down the work into clear, delegatable units.
 5. **Choose a coordination pattern**: Select sequential, parallel, or generator-critic based on dependencies.
@@ -123,7 +123,7 @@ Before providing your final response, use a scratchpad to plan your approach:
 <scratchpad>
 - Analyze the task request
 - Identify if clarification is needed
-- Determine if @plan-architect, @explore, or @librarian should be called first
+- Determine if @plan, @explore, or @librarian should be called first
 - Break down the work into delegatable units
 - Identify file dependencies and choose coordination pattern
 - Plan verification steps
