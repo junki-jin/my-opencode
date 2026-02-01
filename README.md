@@ -5,8 +5,25 @@ Personal OpenCode configuration for agents, commands, skills, and provider/plugi
 ## Overview
 
 - OpenCode config entrypoint in `opencode.json`.
-- Agent and workflow content under `agents/`, `commands/`, and `skills/`.
+- Agent, command, and skill definitions under `agents/`, `commands/`, and `skills/`.
 - Plugin/provider setup for Antigravity auth, PTY, and MCP endpoints.
+
+## Agents
+
+- `agents/orchestrator.md`: read-only coordination agent for multi-step tasks.
+- `agents/ui-engineer.md`: design-focused agent for UI/UX work.
+- `agents/librarian.md`: OSS documentation and code-evidence specialist.
+- `agents/oracle.md`: architecture and risk advisor for high-stakes decisions.
+
+## Skills
+
+- `skills/git-commit-message/`: drafting commit messages when committing.
+- `skills/deep-research/`: research pipeline with methodology, templates, validation scripts, and tests.
+- `skills/skill-creator/`: skill authoring/packaging guidance with scripts and references.
+
+## Commands
+
+- `commands/commit.md`: commit staged changes when present; otherwise stage all changes before committing.
 
 ## Prerequisites
 
@@ -56,6 +73,12 @@ Configured in `opencode.json`:
 
 - `github-grep` remote MCP at `https://mcp.grep.app`
 - `tavily` remote MCP at `https://mcp.tavily.com/mcp`
+
+### Tools
+
+Configured in `opencode.json`:
+
+- `tools.google_search`: `false`.
 
 ### Antigravity auth
 
