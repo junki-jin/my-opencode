@@ -68,7 +68,7 @@ Configured in `opencode.json`:
 
 Configured in `opencode.json`:
 
-- `github-grep` remote MCP at `https://mcp.grep.app`
+- `gh-grep` remote MCP at `https://mcp.grep.app`
 - `tavily` remote MCP at `https://mcp.tavily.com/mcp`
 
 ### Tools
