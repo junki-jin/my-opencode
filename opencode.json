@@ -66,10 +66,29 @@
     },
     "openrouter": {
       "whitelist": [
+        "stepfun/step-3.5-flash:free",
         "moonshotai/kimi-k2.5",
+        "qwen/qwen3-coder-next",
         "x-ai/grok-4.1-fast",
-        "z-ai/glm-4.7",
       ],
+      "models": {
+        "qwen/qwen3-coder-next": {
+          "name": "Qwen3 Coder Next",
+          "limit": { "context": 262144, "output": 65535 },
+          "modalities": { "input": ["text"], "output": ["text"] },
+          "options": {
+            "provider": {
+              "temperature": 1,
+              "top_p": 0.95,
+            },
+          },
+        },
+        "stepfun/step-3.5-flash:free": {
+          "name": "Step 3.5 Flash (free)",
+          "limit": { "context": 256000, "output": 256000 },
+          "modalities": { "input": ["text"], "output": ["text"] },
+        }
+      },
     },
   },
   "mcp": {
