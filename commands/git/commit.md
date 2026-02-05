@@ -1,4 +1,5 @@
 ---
+name: "git:commit"
 description: Create a git commit
 agent: build
 ---
