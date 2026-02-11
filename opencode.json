@@ -108,10 +108,23 @@
       "whitelist": ["gpt-5.2-codex", "gpt-5.2"]
     },
     "opencode": {
-      "whitelist": ["big-pickle", "glm-4.7-free", "kimi-k2.5-free", "minimax-m2.1-free"]
+      "whitelist": ["big-pickle", "kimi-k2.5-free"]
     },
     "openrouter": {
-      "whitelist": ["x-ai/grok-4.1-fast"]
+      "whitelist": ["x-ai/grok-4.1-fast", "z-ai/glm-5"],
+      "models": {
+        "z-ai/glm-5": {
+          "name": "GLM 5",
+          "limit": {
+            "context": 202752,
+            "output": 131072
+          },
+          "modalities": {
+            "input": ["text"],
+            "output": ["text"]
+          }
+        }
+      }
     }
   },
   "mcp": {
@@ -122,7 +135,9 @@
     "tavily": {
       "type": "remote",
       "url": "https://mcp.tavily.com/mcp",
-      "oauth": {}
+      "oauth": {
+        "clientId": "{env:OPENCODE_MCP_CLIENT_ID}"
+      }
     }
   },
   "tools": {
