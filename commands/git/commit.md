@@ -12,6 +12,13 @@ agent: build
 - Current branch: !`git branch --show-current`
 - Recent commits: !`git log --oneline -10`
 
+## Pre-steps
+
+Before creating a commit, you MUST load the git-commit-best-practices skill:
+
+- Call the skill tool with name "git-commit-message-best-practices"
+- Follow the skill's guidance for drafting commit messages
+
 ## Your task
 
 Based on the above changes, create a single git commit.
