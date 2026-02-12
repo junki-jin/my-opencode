@@ -105,7 +105,7 @@
       }
     },
     "openai": {
-      "whitelist": ["gpt-5.2-codex", "gpt-5.2"]
+      "whitelist": ["gpt-5.3-codex", "gpt-5.2"]
     },
     "opencode": {
       "whitelist": ["big-pickle", "kimi-k2.5-free"]
@@ -127,19 +127,7 @@
       }
     }
   },
-  "mcp": {
-    "gh-grep": {
-      "type": "remote",
-      "url": "https://mcp.grep.app"
-    },
-    "tavily": {
-      "type": "remote",
-      "url": "https://mcp.tavily.com/mcp",
-      "oauth": {
-        "clientId": "{env:OPENCODE_MCP_CLIENT_ID}"
-      }
-    }
-  },
+  "mcp": {},
   "tools": {
     "google_search": false
   }
