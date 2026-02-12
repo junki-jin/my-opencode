@@ -6,7 +6,7 @@ Personal OpenCode configuration for agents, commands, skills, and provider/plugi
 
 - OpenCode config entrypoint in `opencode.json`.
 - Agent, command, and skill definitions under `agents/`, `commands/`, and `skills/`.
-- Plugin/provider setup for Antigravity auth, PTY, and MCP endpoints.
+- Plugin/provider setup for Antigravity auth, PTY, and model endpoints.
 
 ## Agents
 
@@ -15,19 +15,23 @@ No custom agents are configured in this repository.
 ## Skills
 
 - `skills/git-commit-message-best-practices/`: drafting commit messages when committing.
-- `skills/agent-browser/`: browser automation workflows, references, and templates.
+- `skills/playwright-cli/`: browser automation via Playwright CLI, with references for session management, storage state, request mocking, tracing, video recording, test generation, and running code.
 - `skills/deep-research/`: research pipeline with methodology, templates, validation scripts, and tests.
 - `skills/skill-creator/`: skill authoring/packaging guidance with scripts and references.
+- `skills/tavily-search/`: web search using Tavily's LLM-optimized search API.
+- `skills/tavily-research/`: AI-synthesized research on any topic with citations.
+- `skills/tavily-extract/`: content extraction from specific URLs via Tavily's extraction API.
+- `skills/tavily-crawl/`: website crawling and saving pages as local markdown files.
 
 ## Commands
 
-- `commands/git/commit.md`: commit staged changes when present; otherwise stage all changes before committing.
+- `commands/git/commit.md`: commit staged changes when present; otherwise stage all changes before committing. Loads the `git-commit-message-best-practices` skill for message drafting.
 
 ## Prerequisites
 
 - OpenCode CLI installed.
 - Node.js or Bun available to install the optional plugin dependency listed in `package.json`.
-- Provider credentials available for the enabled providers (Google/OpenAI/OpenRouter) and Antigravity if you use those models.
+- Provider credentials available for the enabled providers (Google/OpenAI/OpenCode/OpenRouter) and Antigravity if you use those models.
 
 ## Setup
 
@@ -53,10 +57,13 @@ bun install
 
 Configured in `opencode.json`:
 
-- `enabled_providers`: `google`, `openai`, `openrouter`.
-- `provider.google.models`: Antigravity-wrapped Gemini 3 and Claude 4.5 models with custom limits, modalities, and thinking variants.
-- `provider.openai.whitelist`: `gpt-5.2-codex`, `gpt-5.2`.
-- `provider.openrouter.whitelist`: `moonshotai/kimi-k2.5`, `qwen/qwen3-coder-next`, `x-ai/grok-4.1-fast`.
+- `small_model`: `opencode/big-pickle`.
+- `enabled_providers`: `google`, `openai`, `opencode`, `openrouter`.
+- `provider.google.models`: Antigravity-wrapped Claude Opus 4.6 Thinking, Claude Sonnet 4.5 Thinking, Gemini 3 Pro, and Gemini 3 Flash with custom limits, modalities, and thinking variants.
+- `provider.openai.whitelist`: `gpt-5.3-codex`, `gpt-5.2`.
+- `provider.opencode.whitelist`: `big-pickle`, `kimi-k2.5-free`.
+- `provider.openrouter.whitelist`: `x-ai/grok-4.1-fast`, `z-ai/glm-5`.
+- `provider.openrouter.models`: `z-ai/glm-5` with custom context/output limits.
 
 ### Plugins
 
@@ -67,11 +74,7 @@ Configured in `opencode.json`:
 
 ### MCP servers
 
-Configured in `opencode.json`:
-
-- `context7` remote MCP at `https://mcp.context7.com/mcp`
-- `gh-grep` remote MCP at `https://mcp.grep.app`
-- `tavily` remote MCP at `https://mcp.tavily.com/mcp`
+No MCP servers are currently configured (`mcp` is empty).
 
 ### Tools
 
@@ -83,8 +86,6 @@ Configured in `opencode.json`:
 
 Configured in `antigravity.json`:
 
-- `account_selection_strategy`: `sticky`
-- `pid_offset_enabled`: `true`
 - `quiet_mode`: `true`
 
 ## Directory layout
@@ -93,7 +94,7 @@ Configured in `antigravity.json`:
 .
 ├── agents/                  # Agent personas and roles
 ├── commands/                # Custom commands
-├── skills/                  # Reusable skills (e.g., commit messaging)
+├── skills/                  # Reusable skills (e.g., commit messaging, Playwright, Tavily)
 ├── plugins/                 # Local plugin stubs (if needed)
 ├── tools/                   # Tool metadata or helper assets
 ├── AGENTS.md                # Agent behavior rules (currently empty)
