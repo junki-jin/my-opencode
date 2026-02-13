@@ -62,7 +62,7 @@ Configured in `opencode.json`:
 - `provider.google.models`: Antigravity-wrapped Claude Opus 4.6 Thinking, Claude Sonnet 4.5 Thinking, Gemini 3 Pro, and Gemini 3 Flash with custom limits, modalities, and thinking variants.
 - `provider.openai.whitelist`: `gpt-5.3-codex`, `gpt-5.3-codex-spark`, `gpt-5.2`.
 - `provider.opencode.whitelist`: `big-pickle`, `minimax-m2.5-free`, `kimi-k2.5-free`.
-- `provider.openrouter.whitelist`: `x-ai/grok-4.1-fast`, `z-ai/glm-5`.
+- `provider.openrouter.whitelist`: `minimax/minimax-m2.5`, `x-ai/grok-4.1-fast`, `z-ai/glm-5`.
 
 ### Plugins
 

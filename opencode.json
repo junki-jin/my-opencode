@@ -59,7 +59,7 @@
       "whitelist": ["big-pickle", "minimax-m2.5-free", "kimi-k2.5-free"]
     },
     "openrouter": {
-      "whitelist": ["x-ai/grok-4.1-fast", "z-ai/glm-5"],
+      "whitelist": ["minimax/minimax-m2.5", "x-ai/grok-4.1-fast", "z-ai/glm-5"],
     }
   },
   "mcp": {},
