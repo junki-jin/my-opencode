@@ -53,20 +53,13 @@
       }
     },
     "openai": {
-      "whitelist": ["gpt-5.3-codex", "gpt-5.2"]
+      "whitelist": ["gpt-5.3-codex", "gpt-5.3-codex-spark", "gpt-5.2"]
     },
     "opencode": {
-      "whitelist": ["big-pickle", "kimi-k2.5-free"]
+      "whitelist": ["big-pickle", "minimax-m2.5-free", "kimi-k2.5-free"]
     },
     "openrouter": {
       "whitelist": ["x-ai/grok-4.1-fast", "z-ai/glm-5"],
-      "models": {
-        "z-ai/glm-5": {
-          "name": "GLM 5",
-          "limit": { "context": 202752, "output": 131072 },
-          "modalities": { "input": ["text"], "output": ["text"] }
-        }
-      }
     }
   },
   "mcp": {},
