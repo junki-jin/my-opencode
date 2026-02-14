@@ -1,6 +1,6 @@
 ---
 name: tavily-extract
-description: "Extract content from specific URLs using Tavily's extraction API. Returns clean markdown/text from web pages. Use when you have specific URLs and need their content without writing code."
+description: "Extract clean, LLM-ready content (markdown/text) from known URLs using Tavily Extract, with optional focused queries and chunk controls. Use when Claude already has target pages and needs reliable page content for analysis, summarization, or downstream processing."
 ---
 
 # Extract Skill

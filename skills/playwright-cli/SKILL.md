@@ -1,6 +1,6 @@
 ---
 name: playwright-cli
-description: Automates browser interactions for web testing, form filling, screenshots, and data extraction. Use when the user needs to navigate websites, interact with web pages, fill forms, take screenshots, test web applications, or extract information from web pages.
+description: Automate interactive browser workflows with `playwright-cli` for navigation, form input, UI testing, screenshots, and on-page data capture. Use when tasks require real page interaction (including JavaScript-rendered sites), repeatable test steps, or visual verification that static HTTP fetches cannot provide.
 ---
 
 # Browser Automation with playwright-cli

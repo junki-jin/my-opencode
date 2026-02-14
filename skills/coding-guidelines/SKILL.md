@@ -1,6 +1,6 @@
 ---
 name: coding-guidelines
-description: Apply Karpathy-inspired coding guardrails to reduce common LLM mistakes during implementation. Use when writing or editing code to surface assumptions, avoid overengineering, make surgical diffs, and verify changes against clear success criteria.
+description: Practical coding guardrails for implementation work: clarify assumptions before coding, prefer the simplest solution, keep edits narrowly scoped to the request, and define testable success criteria. Use when Claude is asked to write, modify, refactor, or debug code and needs to avoid speculative features, broad unrelated cleanup, or unverified changes.
 ---
 
 # Karpathy-inspired coding guidelines

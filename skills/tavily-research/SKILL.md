@@ -1,6 +1,6 @@
 ---
 name: tavily-research
-description: "Get AI-synthesized research on any topic with citations, directly in your terminal. Supports structured JSON output for pipelines. Use when you need comprehensive research grounded in web data without writing code."
+description: "Produce citation-backed research briefs from web data using Tavily Research, with support for markdown reports and structured JSON outputs. Use when Claude must answer open-ended research questions, compare options, or generate evidence-grounded summaries without building a custom pipeline."
 ---
 
 # Research Skill

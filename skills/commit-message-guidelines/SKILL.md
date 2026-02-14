@@ -1,6 +1,6 @@
 ---
 name: commit-message-guidelines
-description: Generate repository-consistent Git commit messages by analyzing staged changes and recent history, then producing an imperative subject (about 50 chars) and an optional wrapped body (about 72 chars) that explains what changed and why.
+description: Write repository-consistent Git commit messages from staged diffs and recent commit history, with an imperative subject line (~50 chars) and optional wrapped body (~72 chars) focused on intent and impact. Use when Claude needs to draft or refine a commit message that matches project conventions before `git commit`.
 ---
 
 # Git Commit Message Best Practices

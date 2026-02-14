@@ -1,6 +1,6 @@
 ---
 name: tavily-crawl
-description: "Crawl any website and save pages as local markdown files. Use when you need to download documentation, knowledge bases, or web content for offline access or analysis. No code required - just provide a URL."
+description: "Crawl websites from a seed URL, traverse linked pages with depth/path controls, and save results as local markdown files. Use when Claude needs broad site coverage (docs, knowledge bases, help centers) for offline review, indexing, or multi-page analysis."
 ---
 
 # Crawl Skill

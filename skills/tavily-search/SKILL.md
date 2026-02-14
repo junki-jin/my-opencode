@@ -1,6 +1,6 @@
 ---
 name: tavily-search
-description: "Search the web using Tavily's LLM-optimized search API. Returns relevant results with content snippets, scores, and metadata. Use when you need to find web content on any topic without writing code."
+description: "Find relevant web sources quickly with Tavily search, returning ranked results with snippets, metadata, and optional domain/time filtering. Use when Claude needs discovery across unknown sources before deeper extraction, synthesis, or reporting."
 ---
 
 # Search Skill
