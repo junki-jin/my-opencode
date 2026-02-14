@@ -14,9 +14,9 @@ agent: build
 
 ## Pre-steps
 
-Before creating a commit, you MUST load the git-commit-best-practices skill:
+Before creating a commit, you MUST load the commit-message-guidelines skill:
 
-- Call the skill tool with name "git-commit-message-best-practices"
+- Call the skill tool with name "commit-message-guidelines"
 - Follow the skill's guidance for drafting commit messages
 
 ## Your task

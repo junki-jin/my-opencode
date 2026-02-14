@@ -1,6 +1,6 @@
 ---
-name: git-commit-message-best-practices
-description: Use this skill to draft Git commit messages when the user asks to commit or requests a commit message suggestion.
+name: commit-message-guidelines
+description: Generate repository-consistent Git commit messages by analyzing staged changes and recent history, then producing an imperative subject (about 50 chars) and an optional wrapped body (about 72 chars) that explains what changed and why.
 ---
 
 # Git Commit Message Best Practices
