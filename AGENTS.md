@@ -1,4 +1,4 @@
-# AGENT Rules
+# Agent Rules
 
 ## Tone
 
