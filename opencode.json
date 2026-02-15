@@ -1,8 +1,12 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "small_model": "opencode/big-pickle",
   "plugin": ["opencode-antigravity-auth@latest", "opencode-pty@latest"],
-  "enabled_providers": ["google", "openai", "opencode", "openrouter"],
+  "enabled_providers": [
+    "google",
+    "openai",
+    "opencode",
+    "openrouter"
+  ],
   "provider": {
     "google": {
       "whitelist": [
@@ -53,13 +57,24 @@
       }
     },
     "openai": {
-      "whitelist": ["gpt-5.3-codex", "gpt-5.3-codex-spark", "gpt-5.2"]
+      "whitelist": [
+        "gpt-5.3-codex",
+        "gpt-5.3-codex-spark"
+      ]
     },
     "opencode": {
-      "whitelist": ["big-pickle", "minimax-m2.5-free", "kimi-k2.5-free"]
+      "whitelist": [
+        "minimax-m2.5-free",
+        "kimi-k2.5-free"
+      ]
     },
     "openrouter": {
-      "whitelist": ["minimax/minimax-m2.5", "x-ai/grok-4.1-fast", "z-ai/glm-5"]
+      "whitelist": [
+        "minimax/minimax-m2.5",
+        "moonshotai/kimi-k2.5",
+        "x-ai/grok-4.1-fast",
+        "z-ai/glm-5"
+      ]
     }
   },
   "tools": {
