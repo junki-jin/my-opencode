@@ -5,29 +5,17 @@
   ],
   "enabled_providers": [
     "openai",
-    "opencode",
     "openrouter"
   ],
   "provider": {
     "openai": {
       "whitelist": [
         "gpt-5.3-codex",
-        "gpt-5.3-codex-spark",
-        "gpt-5.2-codex",
         "gpt-5.2"
-      ]
-    },
-    "opencode": {
-      "whitelist": [
-        "kimi-k2.5-free",
-        "minimax-m2.5-free"
       ]
     },
     "openrouter": {
       "whitelist": [
-        "minimax/minimax-m2.5",
-        "moonshotai/kimi-k2.5",
-        "x-ai/grok-4.1-fast",
         "z-ai/glm-5"
       ]
     }
